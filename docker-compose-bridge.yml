@@ -15,10 +15,10 @@ services:
       - 32413:32413/udp
       - 32414:32414/udp
     environment:
-      - TZ=<timezone>
-      - PLEX_CLAIM=<claimToken>
+      - TZ=Australia/Melbourne
+      - PLEX_CLAIM=claim-A8n6b7UKzCWAxaL2SQMa
       - ADVERTISE_IP=http://<hostIPAddress>:32400/
-    hostname: <hostname>
+    hostname: PlexServer
     volumes:
       - <path/to/plex/database>:/config
       - <path/to/transcode/temp>:/transcode
